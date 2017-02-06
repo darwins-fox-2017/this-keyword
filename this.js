@@ -23,3 +23,6 @@ class contohClass {
 
 let kelasBaru = new contohClass("Test")
 console.log(kelasBaru.name)
+
+// Output dari pemanggilan this pada node.js yaitu semua isi path maupun version di sistem node.js.
+// Dan jika membuat class baru pada node.js tersebut akan bisa dipanggil lagi isi dari class-nya dengan menggunakan this.
