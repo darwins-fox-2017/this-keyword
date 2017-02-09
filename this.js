@@ -2,8 +2,8 @@
 
 // GLOBAL CONTEXT
 // Penggunaan this dalam global context:
-// Penggunaan pada CLI node.js akan memanggil global object di node tersebut
-// Penggunaan pada browser maka akan memanggil object window itu sendiri
+// Penggunaan this pada CLI node.js akan memanggil global object di node tersebut
+// Penggunaan this pada browser maka akan memanggil object window itu sendiri
 // Contoh this di browser :
 // >this
 // >Window {speechSynthesis: SpeechSynthesis, caches: CacheStorage, localStorage: Storage, sessionStorage: Storage, webkitStorageInfo: DeprecatedStorageInfo…}
@@ -23,6 +23,15 @@ console.log(version.version)
 
 // CLASS CONTEXT
 // Contoh penggunaan this dalam sebuah class di JavaScript:
+class Animal {
+  constructor(num_leg) {
+    this.num_legs = num_leg
+  }
+  
+  countLeg() {
+    return this.num_legs
+  }
+}
 
 // RELEASE 1
 // Output dari pemanggilan this pada node.js menampilkan object node.js, contohnya ada di file node.txt
